@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css" />
+    <title>Odin Project: Admin Dashboard</title>
+</head>
+<body>
+   <div id="main-container">
+    <div id="header">
+        <div id="searchbar">
+            <div id="search-icon"><span class="mdi mdi-magnify"></span></div>
+            <div id="search"></div>
+        </div>
+        <div id="profile-menu">
+            <ul>
+                <li><button type="button"><span class="mdi mdi-bell-ring-outline"></span></button></li>
+                <li><img id="profile-pic" src="img/profile-pic.jpg" alt="Profile pic"></li>
+                <li id="profile-name">Morgan Oakley</li>
+            </ul>
+        </div>
+    </div>
+    <div id="nav">
+        <div id="account-info"> Hi there, Morgan Oakley (@morgan)</div>
+        <!-- Check if you should use buttons here -->
+        <div id="nav-menu"> 
+            <ul>
+                <li><button type="button">New</button></li>
+                <li><button type="button">Upload</button></li>
+                <li><button type="button">Share</button></li>
+            </ul>
+        </div>
+    </div>
+    <div id="sidebar">
+        <div id="dashboard-logo"><span class="mdi mdi-view-dashboard"></span>Dashboard</div>
+        <div id="sidebar-menu">
+            <ul>
+                <li><span class="mdi mdi-home"></span> Home</li>
+                <li><span class="mdi mdi-card-account-details-outline"></span> Profile</li>
+                <li><span class="mdi mdi-message-reply"></span> Messages</li>
+                <li><span class="mdi mdi-clock-time-three"></span> History</li>
+                <li><span class="mdi mdi-note-multiple"></span> Tasks</li>
+                <li><span class="mdi mdi-account-group"></span> Communities</li>
+            </ul>
+        </div>
+        <div id="settings-menu">
+            <ul>
+               <li><span class="mdi mdi-cog"></span> Settings</li>
+               <li><span class="mdi mdi-help-box"></span> Support</li>
+               <li><span class="mdi mdi-shield-check"></span> Privacy</li> 
+            </ul>
+        </div>
+    </div>
+    <div id="card-container">
+
+    </div>
+   </div> 
+</body>
+</html>
