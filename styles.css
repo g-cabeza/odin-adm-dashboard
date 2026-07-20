@@ -1,7 +1,6 @@
 @import url('https://googleapis.com');
 
 div {
-
 }
 
 body {
@@ -25,6 +24,7 @@ body {
     color: white;
     background-color: #1DA1F2;
     font-weight: bold;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.02);
     
 }
 
@@ -72,6 +72,7 @@ body {
     grid-row: 2 / 3;
     display: grid;
     grid-template-columns: 3fr 2fr;
+    box-shadow: 0 4px 8px -6px rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.02);
 }
 
 #nav-menu {
@@ -215,3 +216,60 @@ body {
     font-size: 1rem;
 }
 
+/* CARD CONTAINER CODE FROM HERE */
+
+#card-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap:20px;
+}
+
+#projects {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding: 20px;
+
+}
+
+#project-title {
+    grid-column: 1 / 3;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    align-self: baseline;
+    padding-bottom: 0px;
+}
+
+.card {
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    border-color: 1px solid #e2ecf5;
+    color: grey;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: 10px solid orange;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.02);
+}
+
+.card-buttons {
+    display: flex;
+    font-weight: bold;
+    color: black;
+    justify-content: end;
+    gap: 20px;
+    font-size: 1rem;
+}
+
+.card-buttons span {
+    font-size: 1.5rem;
+}
+
+.title {
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
