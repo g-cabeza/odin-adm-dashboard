@@ -2,7 +2,6 @@
 
 div {
 
-  border: 1px solid blue;
 }
 
 body {
@@ -14,7 +13,7 @@ body {
 
 #main-container {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 3fr;
     grid-template-rows: repeat(10,1fr);
     height: 100vh;
 }
@@ -76,14 +75,16 @@ body {
 }
 
 #nav-menu {
-
-
+    margin: 0px;
+    padding: 0px;
+    align-self: center;
 }
 #nav-menu ul{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding-inline-start: 0px;
     align-self: center;
+
 }
 
 #nav-menu ul li {
@@ -166,16 +167,51 @@ body {
 }
 
 #profile-pic {
-    max-height: 25px;
-    max-height: 35px;
-    padding: 10px 0px 10px 0px;
-    object-fit: contain;
-    border: 1px solid yellow ;
-    border-radius: 50%;
+    max-height: 50px;
+    max-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+#big-profile-pic {
+    max-height: 70px;
+    max-height: 70px;
+    
+    
+}
+
+#big-pic-container {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile-menu ul {
+    margin: 0px;
     justify-self: center;
-    align-self: center;
+    padding-inline-start: 0px;
 }
 
 #profile-name {
     font-weight: bold;
+    padding-left: 10px;
 }
+
+#account-info {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+#profile-text {
+    font-weight: bold;
+    font-size: 1.5rem;
+    align-self: center;
+}
+#profile-text span{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
