@@ -1,6 +1,7 @@
 @import url('https://googleapis.com');
 
 div {
+    /* border: 1px solid blue; */
 }
 
 body {
@@ -289,7 +290,7 @@ body {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     padding: 20px 5px 10px 5px;
-    margin: 20px;
+    margin: 20px 20px 0px 20px;
 
 
 }
@@ -322,22 +323,70 @@ body {
     border-radius: 15px;
 }
 
-#trending {
+#social-container {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     display: grid;
     grid-template-columns: repeat(1,1fr);
-    gap: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.02);
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 15px;
     padding: 20px;
+    gap: 20px;
 
 }
 
 #social-profile-pic {
-    max-height: 10px;
-    max-height: 10px;
+    max-height: 40px;
+    max-height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-right: 10px;
     
+    
+}
+
+#social-pic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#trending-title {
+    grid-column: 1 / 2;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    align-self: baseline;
+    padding-bottom: 10px;
+}
+
+#trending {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin: 20px;
+
+
+}
+
+.social-info {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 10px 10px 0px 10px;
+}
+
+#social-text {
+    font-size: 0.8rem;
+    color: grey;
+    
+}
+#social-text span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: black;
     
 }
